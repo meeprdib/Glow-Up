@@ -94,6 +94,14 @@ StartupEvents.postInit(event => {
         'gloomslate'
     ]
 
+    let meadowStones = [
+        'limestone'
+    ]
+
+    let aetherStones = [
+        'natural/holystone'
+    ]
+
     // Ore type arrays
 
     let vanillaOres = [
@@ -150,6 +158,32 @@ StartupEvents.postInit(event => {
         'lead_ore'
     ]
 
+    let oresSalt = [
+        'salt_ore'
+    ]
+
+    let oresAetherCompat = [
+        'coal_ore',
+        'iron_ore',
+        'copper_ore',
+        'gold_ore',
+        'redstone_ore',
+        'emerald_ore',
+        'lapis_ore',
+        'diamond_ore',
+        'uranium_ore',
+        'zinc_ore',
+        'nickel_ore',
+        'silver_ore',
+        'lead_ore',
+        'tin_ore',
+        'sulfur_ore'
+    ]
+
+    let oresEB = [
+        'nether_quartz_ore'
+    ]
+
 
     bulkGenerate('spelunking_master', variantStones, oresSpelunkingMaster);
     bulkGenerate('deeperdarker', deeperDarkerStones, vanillaOres, 'deeperdarker');
@@ -157,6 +191,13 @@ StartupEvents.postInit(event => {
     bulkGenerate('powah', vanillaStones, oresPowah);
     bulkGenerate('railcraft', vanillaStones, oresRailcraft)
     // bulkGenerate('mekanism', vanillaStones, oresMekanism)
+
+    // bulkGenerate('meadow', meadowStones, vanillaOres, 'meadow')
+    // bulkGenerate('salt', vanillaStones, oresSalt)
+
+    // bulkGenerate('aether_overworld_ores', aetherStones, oresAetherCompat, 'aether')
+
+    // bulkGenerate('excessive_building', vanillaStones, oresEB)
 
 
     
@@ -220,5 +261,8 @@ StartupEvents.postInit(event => {
 
     // Sculk Horde
     em('sculkhorde', 'calcite_ore', 'sculk_living_rock', 'calcite_ore', 'sculkhorde')
+
+    // Etcetera
+    em('etcetera', 'nether_bismuth_ore', 'netherrack', 'bismuth_ore')
 
 });
