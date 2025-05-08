@@ -199,7 +199,11 @@ StartupEvents.postInit(event => {
 
     // bulkGenerate('excessive_building', vanillaStones, oresEB)
 
+    // Abyssal Decor
+    em('abyssal_decor', 'seabrass_ore', 'gravel', 'seabrassore')
 
+    // TiCon
+    em('tconstruct', 'cobalt_ore', 'netherrack', 'cobalt_ore')
     
     // Majrusz's Difficulty
     em('majruszsdifficulty', 'enderium_shard_ore', 'end_stone', 'enderium_shard_ore');
